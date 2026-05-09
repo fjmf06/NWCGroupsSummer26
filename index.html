@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>New Walk Church Winter 2026 Groups</title>
+  <link rel="stylesheet" href="styles.css?v=20260509" />
+</head>
+<body>
+  <main>
+   <img src="./IMG/Groups Summer 26 Web Banner.png" style="display: block; margin: auto; width:95%;">
+
+<div class="filter-bar">
+    <button class="filter-btn" id="filterToggleBtn" onclick="openFilterModal()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="11" y1="18" x2="13" y2="18"/></svg>
+        Filter
+        <span id="filter-badge" class="filter-badge"></span>
+    </button>
+    <span id="filter-count" class="filter-count"></span>
+</div>
+
+<div id="filterOverlay" class="popup-overlay" onclick="handleFilterOverlayClick(event)">
+    <div class="filter-modal">
+        <div class="filter-modal-header">
+            <h3>Filter Groups</h3>
+            <span class="close-button" onclick="closeFilterModal()">&times;</span>
+        </div>
+        <div class="filter-modal-body">
+            <div class="filter-group">
+                <p class="filter-group-title">Meeting Day</p>
+                <div id="filter-day" class="filter-options"></div>
+            </div>
+            <div class="filter-group">
+                <p class="filter-group-title">Group Type</p>
+                <select id="filter-section" class="filter-select">
+                    <option value="">All Group Types</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <p class="filter-group-title">Leader</p>
+                <div class="filter-search-wrap">
+                    <input type="text" id="filter-leader-input" class="filter-search-input" placeholder="Search leader..." autocomplete="off">
+                    <button class="filter-search-clear" id="filter-leader-clear">&#x2715;</button>
+                    <div class="filter-search-dropdown" id="filter-leader-dropdown"></div>
+                </div>
+            </div>
+        </div>
+        <div class="filter-modal-footer">
+            <button class="popup-close-btn" onclick="clearFilters()">Clear All</button>
+            <button class="filter-btn-done" onclick="closeFilterModal()">Done</button>
+        </div>
+    </div>
+</div>
+
+<div id="groups-container"></div>
+<div id="popupOverlay" class="popup-overlay">
+        <div class="popup-content">
+        <span class="close-button" onclick="closeForm()">&times;</span>
+            <div id="formContainer">
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="grid">
+      <!--<a href="#">Audio and Subtitles</a>
+      <a href="#">Help Center</a>
+      <a href="#">Gift Cards</a>
+      <a href="#">Media Center</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Privacy</a>-->
+      <!-- <a href="#">Contact Us</a> -->
+    </div>
+    <div class="copy">New Walk Church</div>
+  </footer>
+
+  <script src="app.js?v=20260509"></script>
+</body>
+</html>
